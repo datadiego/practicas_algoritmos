@@ -1,4 +1,4 @@
-def bubble_sort(arr):
+def bubble_sort_0(arr):
     loop = True
     while loop:
         loop = False
@@ -9,3 +9,11 @@ def bubble_sort(arr):
                 arr[i+1] = save
                 loop = True
     return arr
+
+def bubble_sort_1(list):
+   for iter_num in range(len(list)-1,0,-1):
+      for idx in range(iter_num):
+         if list[idx]>list[idx+1]:
+            temp = list[idx]
+            list[idx] = list[idx+1]
+            list[idx+1] = temp
